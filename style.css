@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    background: blue;
+    font-family: bebas-kai, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+}
+
+.left {
+    float: top;
+    width: 100%;
+}
+
+.right {
+    width: 100%;
+}
+
+
+@media (min-width: 700px) {
+    body {
+        font-size: 300%;
+        background-color: red;
+
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+    body {
+        font-size: 400%;
+        background-color: blue;
+
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    .column {
+        margin-top: 60px;
+
+        float: right;
+
+        height: 300px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    .left {
+        padding-top: 50px;
+        width: 55%;
+    }
+
+    .right {
+
+        width: 25%;
+        margin-right: 130px;
+        margin-top: 90px;
+
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .line1 {
+        font-size: 130px;
+    }
+
+    em {
+        font-size: 100px;
+        font-style: normal;
+        color: red;
+    }
+
+    p {
+        font-size: 50px;
+        line-height: 10px;
+    }
+
+    .color {
+        font-size: 87px;
+        color: red;
+    }
+
+    .bigger {
+        font-size: 87px;
+    }
+
+    svg {
+        padding-top: 50px;
+
+        margin-top: -200px;
+    }
+
+
+    .right ul {
+        list-style-type: none;
+
+    }
+
+    .right li {
+        margin-bottom: 7px;
+    }
+
+}
